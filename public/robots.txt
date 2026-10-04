@@ -1,0 +1,5 @@
+# Robots.txt for Azzahra Putri Sabri Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://ais-pre-q7cco27tbd6mtodeuflw5p-844177471123.asia-southeast1.run.app/sitemap.xml
