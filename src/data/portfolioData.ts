@@ -1,3 +1,12 @@
+import {
+  heroZaraAvatar,
+  officeAraiWorkplace,
+  projectCyberSecuritySoc,
+  projectMultiSiteDash,
+  projectSuaraKitaPortal,
+  smkYarsiMedika,
+} from '../assets/images';
+
 export interface ProjectDemoCredentials {
   role: string;
   email: string;
@@ -110,7 +119,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://www.linkedin.com/in/azzahraph8",
   linkedinDisplay: "linkedin.com/in/azzahraph8",
   github: "https://github.com/azzahraph8",
-  avatar: "/src/assets/images/hero_zara_avatar_1791122844579.jpg",
+  avatar: heroZaraAvatar,
   summary: "Mahasiswi Software Engineering semester 5 yang berdedikasi tinggi dengan pengalaman langsung melalui magang industri, proyek kontrak, dan kepemimpinan sistem digital. Menguasai pengembangan web modern (React, Laravel, PHP), manajemen infrastruktur server & pelacakan multi-domain, hingga eksplorasi mendalam dalam defensive cyber security (SOC, Burp Suite, Network Analysis). Terbiasa bekerja dengan ketelitian tinggi dan siap berkontribusi sebagai Web Developer Intern atau Junior Software Engineer.",
   keyStats: [
     { label: "Website Dikelola", value: "20+", desc: "Lingkungan server terpusat" },
@@ -129,7 +138,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Tangerang, Banten",
     badgeType: "it-admin",
     categoryLabel: "IT Administration",
-    image: "/src/assets/images/office_arai_workplace_1791125478305.jpg",
+    image: officeAraiWorkplace,
     highlight: "Memastikan stabilitas infrastruktur IT pabrik dan sistem operasional",
     attachments: [
       {
@@ -162,7 +171,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Indonesia (Hybrid)",
     badgeType: "leadership",
     categoryLabel: "Tech Leadership",
-    image: "/src/assets/images/project_suara_kita_portal_1791122871708.jpg",
+    image: projectSuaraKitaPortal,
     highlight: "Memimpin perancangan dan arsitektur sistem digital organisasi",
     attachments: [
       {
@@ -188,7 +197,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Jakarta Raya, Indonesia",
     badgeType: "security",
     categoryLabel: "Cyber Security",
-    image: "/src/assets/images/project_cyber_security_soc_1791122885585.jpg",
+    image: projectCyberSecuritySoc,
     highlight: "Menyelesaikan 7 latihan akhir evaluasi serangan & pertahanan siber",
     attachments: [
       {
@@ -221,7 +230,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Tigaraksa, Banten",
     badgeType: "web-dev",
     categoryLabel: "Software Engineering",
-    image: "/src/assets/images/project_multi_site_dash_1791122859226.jpg",
+    image: projectMultiSiteDash,
     highlight: "Mengelola 20+ website perusahaan pada lingkungan server terpusat",
     attachments: [
       {
@@ -309,7 +318,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Tigaraksa, Banten, Indonesia",
     badgeType: "pharmacy",
     categoryLabel: "Farmasi Klinis",
-    image: "/src/assets/images/smk_yarsi_medika_1791125446903.jpg",
+    image: smkYarsiMedika,
     highlight: "Verifikasi resep medis akurat, penyiapan obat, dan konseling pasien",
     attachments: [
       {
@@ -336,7 +345,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Tangerang, Banten, Indonesia",
     badgeType: "pharmacy",
     categoryLabel: "Farmasi Klinis",
-    image: "/src/assets/images/smk_yarsi_medika_1791125446903.jpg",
+    image: smkYarsiMedika,
     highlight: "Manajemen rekam medis obat & optimalisasi sistem penyimpanan rumah sakit",
     attachments: [
       {
@@ -363,7 +372,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Tangerang, Banten, Indonesia",
     badgeType: "pharmacy",
     categoryLabel: "Farmasi Klinis",
-    image: "/src/assets/images/smk_yarsi_medika_1791125446903.jpg",
+    image: smkYarsiMedika,
     highlight: "Pelayanan farmasi rawat jalan & monitoring tanggal kadaluwarsa obat",
     attachments: [
       {
@@ -602,7 +611,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Proyek manajemen infrastruktur komprehensif untuk PT Frantinco Indah Makmur. Mengintegrasikan pemantauan 20+ domain perusahaan dalam centralized hosting, menyelesaikan isu penelusuran konversi (missing conversions & tag errors), dan mengoptimasi kecepatan load website menggunakan Laravel dan arsitektur UI React.",
     problemSolved: "Lebih dari 20 domain perusahaan tersebar tanpa monitoring terpusat, sering terjadi kegagalan SSL yang tidak terpantau, serta konversi iklan Google Ads hilang akibat script tags yang broken.",
     architectureApproach: "Menerapkan Scheduled Worker di Laravel untuk ping berkala ke endpoint domain, parsing status DNS, dan agregasi data ke MySQL. Frontend dibangun dengan React & Tailwind untuk visualisasi status real-time dengan status badge dinamis.",
-    image: "/src/assets/images/project_multi_site_dash_1791122859226.jpg",
+    image: projectMultiSiteDash,
     tags: ["Laravel", "React", "Server Management", "Google Tag Manager", "DNS Routing"],
     features: [
       "Pemantauan status 20+ website korporat secara realtime",
@@ -632,7 +641,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Mengarahkan tim IT Development dalam merancang dan mengembangkan platform portal digital Suara Kita. Fokus utama meliputi UI yang ramah seluler, arsitektur data terstruktur dengan Laravel API, serta antarmuka React yang modern dengan animasi halus untuk meningkatkan keterlibatan audiens.",
     problemSolved: "Organisasi advokasi pemuda membutuhkan portal terpercaya untuk menjangkau audiens muda tanpa hambatan akses lambat di ponsel atau formulir manual yang tercecer.",
     architectureApproach: "Menggunakan pola arsitektur Client-Server terpisah (React SPA + Laravel RESTful API). Autentikasi berbasis Token (Sanctum), validasi input ketat terhadap XSS/CSRF, serta optimasi bundle size untuk mobile-first performance.",
-    image: "/src/assets/images/project_suara_kita_portal_1791122871708.jpg",
+    image: projectSuaraKitaPortal,
     tags: ["React", "Laravel API", "Tailwind CSS", "Mobile-First", "Digital System"],
     features: [
       "Sistem publikasi artikel dan kegiatan pemuda terintegrasi",
@@ -662,7 +671,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Hasil implementasi program Wo-Men In Tech Security di mana Zara menuntaskan 7 latihan pertahanan dan serangan siber. Berisi dokumentasi pengujian celah keamanan web (XSS, SQL Injection, CSRF), analisis paket lalu lintas jaringan, simulasi Packet Tracer, dan pemetaan ancaman CTI.",
     problemSolved: "Aplikasi internal rentan terhadap serangan injection dan intercept data sensitif tanpa adanya pemantauan insiden berbasis SIEM/SOC yang memadai.",
     architectureApproach: "Penerapan metodologi audit keamanan OWASP Testing Guide. Mengombinasikan analisis paket jaringan Wireshark, interceptor Burp Suite, dan pemodelan topologi pertahanan DMZ di Cisco Packet Tracer.",
-    image: "/src/assets/images/project_cyber_security_soc_1791122885585.jpg",
+    image: projectCyberSecuritySoc,
     tags: ["SOC Operations", "Burp Suite", "Packet Tracer", "Log Analysis", "OSINT"],
     features: [
       "Visualisasi log insiden keamanan dan klasifikasi tingkat risiko",
@@ -692,7 +701,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Membantu efisiensi operasional pabrik manufaktur dengan mendigitalkan catatan riwayat pemeliharaan perangkat komputer, alokasi printer, server database lokal, serta pemantauan titik jaringan di area produksi dan kantor.",
     problemSolved: "Pencatatan aset komputer dan penanganan tiket kendala teknis pabrik sebelumnya menggunakan kertas spreadsheet manual yang rawan hilang dan sulit dilacak.",
     architectureApproach: "Aplikasi web internal menggunakan PHP MVC, basis data relasional MySQL dengan index pada nomor seri aset, serta ekspor PDF otomatis untuk audit internal perusahaan.",
-    image: "/src/assets/images/project_multi_site_dash_1791122859226.jpg",
+    image: projectMultiSiteDash,
     tags: ["PHP", "Laravel", "MySQL", "IT Inventory", "Network Admin"],
     features: [
       "Pencatatan siklus hidup perangkat keras IT dan lisensi perangkat lunak",
@@ -722,7 +731,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Membangun antarmuka pengguna interaktif dan menghubungkan komponen UI dengan RESTful backend. Menghadirkan navigasi yang mulus, galeri program kerja, dan sistem verifikasi peserta event.",
     problemSolved: "Komunitas memerlukan platform acara dengan alur pendaftaran peserta yang tidak putus di tengah jalan saat lonjakan ribuan pengunjung bersamaan.",
     architectureApproach: "Pemisahan presentational & container components di React, optimasi rendering memoization, dan validasi form di sisi klien (client-side form validation) sebelum dikirim ke backend API.",
-    image: "/src/assets/images/project_suara_kita_portal_1791122871708.jpg",
+    image: projectSuaraKitaPortal,
     tags: ["React", "Laravel", "REST API", "UI Components", "Performance"],
     features: [
       "Desain antarmuka reusable component library",
@@ -752,7 +761,7 @@ export const PROJECTS: Project[] = [
     longDescription: "Mengembangkan aplikasi web lengkap untuk AMGALA Foundation. Membangun antarmuka ramah pengguna, integrasi database relasional yang stabil, dan skema konten dinamis untuk pembaruan kegiatan berkala.",
     problemSolved: "Yayasan membutuhkan transparansi dana program kemanusiaan dengan arsip terorganisir yang mudah dicari oleh calon donatur institusional.",
     architectureApproach: "Laravel MVC dengan Blade templating dan integrasi MySQL. Struktur routing aman dengan middleware otentikasi role admin yayasan.",
-    image: "/src/assets/images/project_suara_kita_portal_1791122871708.jpg",
+    image: projectSuaraKitaPortal,
     tags: ["Laravel (PHP)", "MySQL", "Full-Stack", "Non-Profit", "Responsive"],
     features: [
       "Dashboard admin untuk pengelolaan program yayasan",
