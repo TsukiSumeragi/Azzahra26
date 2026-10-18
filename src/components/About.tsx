@@ -12,13 +12,14 @@ import {
   Check
 } from 'lucide-react';
 import { EDUCATION_LIST, CERTIFICATIONS } from '../data/portfolioData';
+import { courseworkLearningHub, smkYarsiMedika } from '../assets/images';
 import { RevealOnScroll } from './common/RevealOnScroll';
 
 export const About: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'narrative' | 'education' | 'certs'>('education');
 
   // Manual custom SMK photo upload & storage
-  const defaultSmkPhoto = '/src/assets/images/smk_yarsi_medika_1791125446903.jpg';
+  const defaultSmkPhoto = smkYarsiMedika;
   const [smkPhoto, setSmkPhoto] = useState<string>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('zara_smk_custom_photo');
@@ -122,7 +123,7 @@ export const About: React.FC = () => {
               <div>
                 <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 mb-4">
                   <img
-                    src="/src/assets/images/coursework_learning_hub_1791125462871.jpg"
+                    src={courseworkLearningHub}
                     alt="Universitas Insan Pembangunan Indonesia"
                     referrerPolicy="no-referrer"
                     loading="lazy"

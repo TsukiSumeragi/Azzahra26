@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { BackNavHeader } from '../common/BackNavHeader';
 import { EDUCATION_LIST, CERTIFICATIONS } from '../../data/portfolioData';
+import { courseworkLearningHub, smkYarsiMedika } from '../../assets/images';
 
 interface AboutPageProps {
   onBack: () => void;
@@ -22,7 +23,7 @@ interface AboutPageProps {
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onBack, onNavigateToSchedule }) => {
   // Allow user to upload custom SMK photo manually and persist to localStorage
-  const defaultSmkPhoto = '/src/assets/images/smk_yarsi_medika_1791125446903.jpg';
+  const defaultSmkPhoto = smkYarsiMedika;
   const [smkPhoto, setSmkPhoto] = useState<string>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('zara_smk_custom_photo');
@@ -119,7 +120,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, onNavigateToSchedu
               <div>
                 <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 mb-4">
                   <img
-                    src="/src/assets/images/coursework_learning_hub_1791125462871.jpg"
+                    src={courseworkLearningHub}
                     alt="Universitas Insan Pembangunan Indonesia"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
